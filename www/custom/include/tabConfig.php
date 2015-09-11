@@ -1,31 +1,14 @@
 <?php
-// created: 2015-03-18 14:39:10
+// created: 2015-09-10 15:43:49
 $GLOBALS['tabStructure'] = array (
-  'LBL_TABGROUP_SALES' => 
+  'LBL_GROUPTAB_HOME_MVC' =>
   array (
-    'label' => 'LBL_TABGROUP_SALES',
-    'modules' => 
+    'label' => 'LBL_GROUPTAB_HOME_MVC',
+    'modules' =>
     array (
-      0 => 'Accounts',
-      1 => 'Contacts',
-    ),
-  ),
-  'LBL_TABGROUP_MARKETING' => 
-  array (
-    'label' => 'LBL_TABGROUP_MARKETING',
-    'modules' => 
-    array (
-      0 => 'Campaigns',
-      1 => 'AOS_Products',
-      2 => 'Prospects',
-    ),
-  ),
-  'LBL_TABGROUP_ACTIVITIES' => 
-  array (
-    'label' => 'LBL_TABGROUP_ACTIVITIES',
-    'modules' => 
-    array (
-      0 => 'FP_events',
+      0 => 'Home',
+      1 => 'Accounts',
+      2 => 'Contacts'
     ),
   ),
 );
