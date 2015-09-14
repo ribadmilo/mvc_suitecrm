@@ -1,5 +1,5 @@
 <?php
-// created: 2015-09-10 15:43:49
+// created: 2015-09-14 16:20:58
 $sugar_config = array (
   'addAjaxBannedModules' => 
   array (
@@ -68,6 +68,7 @@ $sugar_config = array (
     'min_cron_interval' => 30,
   ),
   'currency' => '',
+  'dashlet_auto_refresh_min' => '30',
   'dashlet_display_row_options' => 
   array (
     0 => '1',
@@ -213,8 +214,9 @@ $sugar_config = array (
   'default_export_charset' => 'UTF-8',
   'default_language' => 'en_us',
   'default_locale_name_format' => 's f l',
-  'default_max_tabs' => 10,
+  'default_max_tabs' => '7',
   'default_module' => 'Home',
+  'default_module_favicon' => false,
   'default_navigation_paradigm' => 'gm',
   'default_number_grouping_seperator' => ',',
   'default_password' => '',
@@ -234,6 +236,7 @@ $sugar_config = array (
   'default_user_is_admin' => false,
   'default_user_name' => '',
   'demoData' => 'no',
+  'developerMode' => false,
   'disable_convert_lead' => false,
   'disable_export' => false,
   'disable_persistent_connections' => 'false',
@@ -244,6 +247,7 @@ $sugar_config = array (
   'email_default_client' => 'sugar',
   'email_default_delete_attachments' => true,
   'email_default_editor' => 'html',
+  'enable_action_menu' => true,
   'export_delimiter' => ',',
   'export_excel_compatible' => false,
   'history_max_viewed' => 50,
@@ -259,7 +263,7 @@ $sugar_config = array (
     'timeout' => 86400,
   ),
   'js_custom_version' => 1,
-  'js_lang_version' => 5,
+  'js_lang_version' => 6,
   'languages' => 
   array (
     'en_us' => 'English (US)',
@@ -332,7 +336,7 @@ $sugar_config = array (
       3 => 'Administration',
       4 => 'Sync',
     ),
-    'default_limit' => 1000,
+    'default_limit' => 20000,
   ),
   'rss_cache_time' => '10800',
   'save_query' => 'all',
@@ -353,9 +357,32 @@ $sugar_config = array (
   'showThemePicker' => true,
   'site_url' => 'http://192.168.56.101',
   'slow_query_time_msec' => '100',
+  'stack_trace_errors' => false,
   'sugar_version' => '6.5.20',
   'sugarbeet' => false,
   'suitecrm_version' => '7.2.1',
+  'theme_settings' => 
+  array (
+    'SuiteR' => 
+    array (
+      'display_sidebar' => false,
+      'navbar' => '025716',
+      'navbar_hover' => '025716',
+      'navbar_font' => 'FFFFFF',
+      'navbar_link_hover' => 'FFFFFF',
+      'dropdown_menu' => 'F7F7F7',
+      'dropdown_menu_link' => '025716',
+      'dropdown_menu_link_hover' => 'F7F7F7',
+      'button' => '025716',
+      'button_hover' => 'c8d6d1',
+      'button_link' => 'FFFFFF',
+      'button_link_hover' => '025716',
+      'page_header' => '025716',
+      'page_link' => '025716',
+      'dashlet' => 'c8d6d1',
+      'icon' => 'FFFFFF',
+    ),
+  ),
   'time_formats' => 
   array (
     'H:i' => '23:00',
@@ -389,6 +416,7 @@ $sugar_config = array (
     10 => 'vbs',
     11 => 'html',
     12 => 'htm',
+    13 => 'phtml',
   ),
   'upload_dir' => 'upload/',
   'upload_maxsize' => 30000000,

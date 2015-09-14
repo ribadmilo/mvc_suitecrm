@@ -783,8 +783,8 @@ $app_strings['LBL_RESCHEDULE_COUNT'] = 'Intentos de Llamada';
 
 
 $app_list_strings["moduleList"]["SecurityGroups"] = 'Administraci贸n de Grupos de Seguridad';
-$app_strings['LBL_LOGIN_AS'] = "Conexi髇 como ";
-$app_strings['LBL_LOGOUT_AS'] = "Cerrar sesi髇 como ";
+$app_strings['LBL_LOGIN_AS'] = "Conexi贸n como ";
+$app_strings['LBL_LOGOUT_AS'] = "Cerrar sesi贸n como ";
 $app_strings['LBL_SECURITYGROUP'] = 'Administraci贸n de Grupo';
 
 
