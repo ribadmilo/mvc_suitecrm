@@ -21,4 +21,6 @@ $sugar_config['theme_settings']['SuiteR']['page_header'] = '025716';
 $sugar_config['theme_settings']['SuiteR']['page_link'] = '025716';
 $sugar_config['theme_settings']['SuiteR']['dashlet'] = 'c8d6d1';
 $sugar_config['theme_settings']['SuiteR']['icon'] = 'FFFFFF';
+$sugar_config['enable_line_editing_list'] = true;
+$sugar_config['enable_line_editing_detail'] = true;
 /***CONFIGURATOR***/
