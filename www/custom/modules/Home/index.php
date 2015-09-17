@@ -97,20 +97,20 @@ if(!$hasUserPreferences){
     }
     else{
         // This is here to get Sugar dashlets added above the rest
-        $dashlets[create_guid()] = array('className' => 'iFrameDashlet',
-            'module' => 'Home',
-            'forceColumn' => 0,
-            'fileLocation' => $dashletsFiles['iFrameDashlet']['file'],
-            'options' => array('titleLabel' => $GLOBALS['app_strings']['LBL_DISCOVER_SUITECRM'],
-                'url' => 'http://www.suitecrm.com',
-                'height' => 315,
-            ));
+        // $dashlets[create_guid()] = array('className' => 'iFrameDashlet',
+        //     'module' => 'Home',
+        //     'forceColumn' => 0,
+        //     'fileLocation' => $dashletsFiles['iFrameDashlet']['file'],
+        //     'options' => array('titleLabel' => $GLOBALS['app_strings']['LBL_DISCOVER_SUITECRM'],
+        //         'url' => 'http://www.suitecrm.com',
+        //         'height' => 315,
+        //     ));
 
-        $dashlets[create_guid()] = array ('className' => 'SugarFeedDashlet',
-            'module' => 'SugarFeed',
-            'forceColumn' => 1,
-            'fileLocation' => $dashletsFiles['SugarFeedDashlet']['file'],
-        );
+        // $dashlets[create_guid()] = array ('className' => 'SugarFeedDashlet',
+        //     'module' => 'SugarFeed',
+        //     'forceColumn' => 1,
+        //     'fileLocation' => $dashletsFiles['SugarFeedDashlet']['file'],
+        // );
 
         foreach($defaultDashlets as $dashletName=>$module){
             // clint - fixes bug #20398
@@ -304,11 +304,11 @@ $resources = $sugarChart->getChartResources();
 $mySugarResources = $sugarChart->getMySugarChartResources();
 $sugar_smarty->assign('chartResources', $resources);
 $sugar_smarty->assign('mySugarChartResources', $mySugarResources);
-if (file_exists("themes/" . $theme ."/tpls/MySugar.tpl")) {
-    echo $sugar_smarty->fetch("themes/" . $theme ."/tpls/MySugar.tpl");
-} else {
-    echo $sugar_smarty->fetch('custom/include/MySugar/tpls/MySugar.tpl');
-}
+#if (file_exists("themes/" . $theme ."/tpls/MySugar.tpl")) {
+#    echo $sugar_smarty->fetch("themes/" . $theme ."/tpls/MySugar.tpl");
+#} else {
+echo $sugar_smarty->fetch('custom/include/MySugar/tpls/MySugar.tpl');
+#}
 
 //init the quickEdit listeners after the dashlets have loaded on home page the first time
 echo"<script>if(typeof(qe_init) != 'undefined'){qe_init();}</script>";
